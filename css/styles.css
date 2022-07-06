@@ -1,0 +1,225 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  /* text color */
+  --main-txt-cl: #212121;
+  --sec-txt-cl: #757575;
+  --accent-txt-cl: #2196f3;
+
+  /* bg color */
+  --darc-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+
+  /* others */
+}
+/* reset styles */
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+.list {
+  list-style: none;
+  text-decoration: var(--main-font);
+}
+/* body section */
+body {
+  font-family: var(--main-font);
+  color: var(--main-txt-cl);
+}
+/* header section */
+.nav.link {
+  font-family: var(--secondary-font);
+  color: #2196f3;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.item-nav-studio {
+  color: #212121;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+
+.nav-item.studio {
+  color: var(--accent-txt-cl);
+}
+.mail {
+  color: #2196f3;
+}
+.nav-item,
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.nav-item:hover,
+.tel:hover,
+.mail-link:hover,
+.tel:hover {
+  color: var(--accent-txt-cl);
+}
+.nav-item:focus,
+.mail-link:focus,
+.tel:focus {
+  color: var(--accent-txt-cl);
+}
+.tel,
+.mail-link,
+.tel-link {
+  color: var(--sec-txt-cl);
+}
+
+/* main section */
+.main-secnion {
+  background-color: var(--darc-bg-cl);
+}
+.main-title {
+  color: white;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.team-items {
+  background-color: var(--light-bg-cl);
+}
+.btn {
+  font-family: inherit;
+  background-color: var(--accent-txt-cl);
+  color: white;
+  font-weight: 700;
+  line-height: calc(30 / 16);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #188ce8;
+}
+
+.title-el {
+  display: none;
+}
+.main-list-item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.lists-items {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--sec-txt-cl);
+}
+
+/* main-secnion 2 */
+.title-works,
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.works-img {
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1061px;
+}
+/* main-secnion 3 */
+.teams-name {
+  font-weight: 500;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-prof {
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--sec-txt-cl);
+}
+
+/* footer section */
+.footer {
+  background-color: var(--darc-bg-cl);
+}
+.footer {
+  font-style: normal;
+}
+
+.footer-item-webstudio {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+}
+
+.footer-web {
+  color: var(--accent-txt-cl);
+}
+.footer {
+  color: white;
+}
+.addres {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.footer-item:hover {
+  color: var(--accent-txt-cl);
+}
+.footer-item:focus {
+  color: var(--accent-txt-cl);
+}
+.footer-item {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Portfolio buttons */
+
+/* main */
+.main-titles {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 16);
+}
+.main-titles .title {
+  line-height: calc(30 / 16);
+  color: var(--sec-txt-cl);
+}
+
+.btn-item {
+  color: white;
+  background-color: var(--accent-txt-cl);
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  text-align: center;
+  cursor: pointer;
+}
+.btn-item-list {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-item-list:hover {
+  color: white;
+  background-color: var(--accent-txt-cl);
+}
