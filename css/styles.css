@@ -22,13 +22,56 @@
   list-style: none;
   text-decoration: var(--main-font);
 }
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
 /* body section */
+/* .conteiner{
+  width: 1600px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 body {
   font-family: var(--main-font);
   color: var(--main-txt-cl);
+  width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /* header section */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-items .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav.link {
+  margin-left: 215px;
   font-family: var(--secondary-font);
   color: #2196f3;
   font-weight: 700;
@@ -47,18 +90,37 @@ body {
 .nav-item.studio {
   color: var(--accent-txt-cl);
 }
-.mail {
-  color: #2196f3;
-}
-.nav-item,
 .contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+
+  display: flex;
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: 215px;
 }
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+.mail {
+  color: #2196f3;
+}
+
+.nav-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
 .nav-item:hover,
-.tel:hover,
 .mail-link:hover,
 .tel:hover {
   color: var(--accent-txt-cl);
@@ -69,15 +131,16 @@ body {
   color: var(--accent-txt-cl);
 }
 .tel,
-.mail-link,
-.tel-link {
+.mail-link {
   color: var(--sec-txt-cl);
 }
 
 /* main section */
 .main-secnion {
+  text-align: center;
   background-color: var(--darc-bg-cl);
 }
+
 .main-title {
   color: white;
   font-weight: 900;
@@ -86,26 +149,44 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin: 0px;
+  padding-top: 200px;
+  padding-bottom: 30px;
 }
 .team-items {
   background-color: var(--light-bg-cl);
 }
+
 .btn {
   font-family: inherit;
   background-color: var(--accent-txt-cl);
   color: white;
   font-weight: 700;
   line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
   cursor: pointer;
+  margin-bottom: 200px;
+  padding: 10px 32px;
 }
 
 .btn:hover {
   background-color: #188ce8;
 }
 
-.title-el {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
 .main-list-item {
   font-weight: 700;
   font-size: 14px;
@@ -113,6 +194,30 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+.benefits {
+  width: 1170px;
+  padding-top: 94px;
+  margin-left: 215px;
+  margin-right: 215px;
+  /* margin: 94px 215px; */
+}
+
+.benefits-list {
+  display: flex;
+  padding-left: 0px;
+  margin: 0px;
+}
+
+.items {
+  width: 270px;
+  margin-left: 30px;
+}
+
+.items:last-child {
+  margin-right: 0px;
+}
+
 .lists-items {
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -121,6 +226,7 @@ body {
 }
 
 /* main-secnion 2 */
+
 .title-works,
 .team {
   font-weight: 700;
@@ -129,19 +235,60 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.works-img {
-  width: 370px;
-  height: 294px;
-  left: 215px;
-  top: 1061px;
+
+.team {
+  margin: 0px;
 }
+.title-works {
+  padding-top: 94px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.works-list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-left: 0px;
+}
+.work-img-title {
+  margin-left: 30px;
+}
+
 /* main-secnion 3 */
+
+.team-items {
+  display: block;
+  padding-top: 94px;
+}
+
+.team {
+  padding-top: 94px;
+}
+
+.team-lists {
+  padding-left: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.team-card {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 94px;
+}
+
 .teams-name {
   font-weight: 500;
   line-height: calc(19 / 16);
   text-align: center;
+  font-size: 16px;
   letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
+
 .team-prof {
   line-height: calc(19 / 16);
   text-align: center;
@@ -154,6 +301,10 @@ body {
   background-color: var(--darc-bg-cl);
 }
 .footer {
+  display: block;
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   font-style: normal;
 }
 
@@ -166,15 +317,21 @@ body {
 
 .footer-web {
   color: var(--accent-txt-cl);
+  padding-top: 60px;
 }
 .footer {
   color: white;
 }
-.addres {
+
+.adress-items {
+  margin-top: 20px;
+}
+.address {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 .footer-item:hover {
   color: var(--accent-txt-cl);
@@ -188,38 +345,109 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+}
+
+.footer-items {
+  padding-left: 0px;
+  /* padding-bottom: 60px; */
+}
+
+.footer-items-title {
+  margin-top: 9px;
 }
 
 /* Portfolio buttons */
 
 /* main */
+.mains {
+  display: flex;
+}
+
+/* .section {
+  display: flex;
+} */
+
+.btn-lits {
+  display: flex;
+  align-items: center;
+  padding-top: 94px;
+  padding-left: 0px;
+  padding-left: 495px;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.bottoms {
+  margin-right: 8px;
+}
+
 .main-titles {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 16);
 }
+
 .main-titles .title {
   line-height: calc(30 / 16);
   color: var(--sec-txt-cl);
 }
 
 .btn-item {
+  padding: 6px 22px;
+
   color: white;
   background-color: var(--accent-txt-cl);
   font-weight: 500;
   line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.03em;
 }
 .btn-item-list {
+  padding: 6px 22px;
+  margin-left: 8px;
+
   font-family: inherit;
   font-weight: 500;
   line-height: calc(26 / 16);
   text-align: center;
   cursor: pointer;
+  letter-spacing: 0.03em;
 }
 
 .btn-item-list:hover {
   color: white;
   background-color: var(--accent-txt-cl);
+}
+
+.logo-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0px;
+  margin: 34px 215px 44px 215px;
+  /* margin-bottom: 44px;
+  margin-left: 215px; */
+}
+
+.wrapper {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 5px;
+}
+
+.logo-title-link {
+  width: calc((100%-60px) / 3);
+}
+
+.logo-title-link :nth-child(3n) {
+  margin-right: 0px;
+}
+.logo-title-link {
+  width: 370px;
+}
+
+.link .title {
+  width: 370px;
 }
