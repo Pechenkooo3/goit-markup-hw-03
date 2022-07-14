@@ -56,6 +56,11 @@ body {
 }
 /* header section */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-portfolio {
   border-bottom: 1px solid #ececec;
 }
@@ -102,17 +107,27 @@ body {
   letter-spacing: 0.02em;
 
   display: flex;
+  align-items: center;
   padding-left: 0px;
+  padding-inline-start: 0px;
   margin-left: auto;
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
 
-.contacts .item + .item {
-  margin-left: 50px;
-}
 .mail {
   color: #2196f3;
+}
+
+.adress-items {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+.adress-items:first-child {
+  margin-left: 0px;
 }
 
 .nav-item {
@@ -200,6 +215,8 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .benefits {
@@ -243,6 +260,7 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 
 .team {
@@ -260,6 +278,8 @@ body {
   justify-content: center;
   padding-left: 0px;
   margin-top: 50px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
   /* margin: 0px; */
 }
 
@@ -309,6 +329,8 @@ body {
   text-align: center;
   font-size: 16px;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 .team-prof {
@@ -342,7 +364,7 @@ body {
 }
 
 .adress-items {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 .address {
   font-family: var(--main-font);
@@ -377,7 +399,7 @@ body {
   margin-top: 9px;
 }
 
-.footer-items :last-child {
+.footer-items :first-child {
   margin-top: 0px;
 }
 
@@ -403,9 +425,16 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 16);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
-.main-titles .title {
+.title {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+
+  color: #757575;
   line-height: calc(30 / 16);
   color: var(--sec-txt-cl);
 }
@@ -429,6 +458,7 @@ body {
   text-align: center;
   cursor: pointer;
   letter-spacing: 0.03em;
+  border: none;
 }
 
 .btn-item-list:hover {
